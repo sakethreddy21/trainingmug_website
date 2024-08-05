@@ -1,7 +1,4 @@
-import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
-import Image from "next/image";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Description from "@/components/description/page";
 
 import { Navbar } from "@/components/navbar/page";
