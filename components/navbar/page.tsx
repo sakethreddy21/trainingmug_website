@@ -45,13 +45,13 @@ export function Navbar({ className }: { className?: string }) {
               title="Programming Fundamentals"
               href=""
               src="/course1.jpg"
-              description="Java ( Helps you master Programming Fundamentals in Java )"
+              description="Helps you master Programming Fundamentals in Java"
             />
             <ProductItem
               title="Mastering Object Oriented Programming"
               href=""
               src="/course2.jpg"
-              description="Java ( Mastering Object Oriented Programming in Java )"
+              description="Mastering Object Oriented Programming in Java"
             />
            
             
@@ -81,7 +81,7 @@ export function Navbar({ className }: { className?: string }) {
     </div>
     <Button
         borderRadius="1.75rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 h-12 w-40"
       >
        Sign Up
       </Button>
