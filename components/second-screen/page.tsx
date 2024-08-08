@@ -23,9 +23,7 @@ const SecondScreen = () => {
       <div className='w-full h-screen'>
         <TabsDemo />
       </div>
-      <div className='w-[1100px] h-screen rounded-lg'>
-        <StickyScrollCourses />
-      </div>
+    
       
       </div>
   )

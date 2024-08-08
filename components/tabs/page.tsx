@@ -16,8 +16,8 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Career Paths", 
+      value: "career_paths",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Services tab</p>
@@ -26,8 +26,8 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Playground",
-      value: "playground",
+      title: "Interactive Quizzes",
+      value: "quizzes",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Playground tab</p>
@@ -36,8 +36,8 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Content",
-      value: "content",
+      title: "Coding Excersices",
+      value: "coding_excersices",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Content tab</p>
@@ -46,8 +46,8 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Random",
-      value: "random",
+      title: "Cloud IDE",
+      value: "cloud_ide",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Random tab</p>
@@ -55,6 +55,26 @@ export function TabsDemo() {
         </div>
       ),
     },
+    {
+        title: "Dashboard",
+        value: "dashboard",
+        content: (
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Random tab</p>
+            <DummyContent />
+          </div>
+        ),
+      },
+      {
+        title: "AI Support",
+        value: "ai_support",
+        content: (
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Random tab</p>
+            <DummyContent />
+          </div>
+        ),
+      },
   ];
 
   return (
