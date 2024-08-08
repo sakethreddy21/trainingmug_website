@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '../ui/moving-border'
 import { ArrowRight } from 'lucide-react'
 import { TabsDemo } from '../tabs/page'
+import { StickyScrollCourses } from '../scrollingcards/page'
 
 const SecondScreen = () => {
   return (
@@ -22,7 +23,9 @@ const SecondScreen = () => {
       <div className='w-full h-screen'>
         <TabsDemo />
       </div>
-      
+      <div className='w-[1100px] h-screen rounded-lg'>
+        <StickyScrollCourses />
+      </div>
       
       </div>
   )
