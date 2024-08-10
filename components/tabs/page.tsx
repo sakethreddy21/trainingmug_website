@@ -9,19 +9,19 @@ export function TabsDemo() {
       title: "Our Features",
       value: "features",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Product Tab</p>
-          <DummyContent />
+        <div className="w-full flex justify-center items-center overflow-hidden relative h-full rounded-2xl p-5 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+         
+          <DummyContent imgpath="/tabs/AI-support-System.png" />
         </div>
       ),
     },
     {
-      title: "Career Paths", 
+      title: "Career Paths",
       value: "career_paths",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent />
+        <div className="w-full flex justify-center items-center overflow-hidden relative h-full rounded-2xl p-5 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          
+          <DummyContent imgpath="/tabs/career-path.png" />
         </div>
       ),
     },
@@ -29,19 +29,19 @@ export function TabsDemo() {
       title: "Interactive Quizzes",
       value: "quizzes",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Playground tab</p>
-          <DummyContent />
+        <div className="w-full flex justify-center items-center overflow-hidden relative h-full rounded-2xl p-5 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+         
+          <DummyContent  imgpath="/tabs/quiz.png" />
         </div>
       ),
     },
     {
-      title: "Coding Excersices",
-      value: "coding_excersices",
+      title: "Coding Exercises",
+      value: "coding_exercises",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Content tab</p>
-          <DummyContent />
+        <div className="w-full flex justify-center items-center overflow-hidden relative h-full rounded-2xl p-5 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+         
+          <DummyContent  imgpath="/tabs/coding-excercise.png"/>
         </div>
       ),
     },
@@ -49,49 +49,52 @@ export function TabsDemo() {
       title: "Cloud IDE",
       value: "cloud_ide",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Random tab</p>
-          <DummyContent />
+        <div className="w-full flex justify-center items-center overflow-hidden relative h-full rounded-2xl p-5 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          
+          <DummyContent imgpath="/tabs/cloudIDE.png" />
         </div>
       ),
     },
     {
-        title: "Dashboard",
-        value: "dashboard",
-        content: (
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-            <p>Random tab</p>
-            <DummyContent />
-          </div>
-        ),
-      },
-      {
-        title: "AI Support",
-        value: "ai_support",
-        content: (
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-            <p>Random tab</p>
-            <DummyContent />
-          </div>
-        ),
-      },
+      title: "Dashboard",
+      value: "dashboard",
+      content: (
+        <div className="w-full flex justify-center items-center overflow-hidden relative h-full rounded-2xl p-5 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          
+          <DummyContent  imgpath="/tabs/dashboard.png" />
+        </div>
+      ),
+    },
+    {
+      title: "AI Support",
+      value: "ai_support",
+      content: (
+        <div className="w-full flex justify-center items-center overflow-hidden relative h-full rounded-2xl p-5 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+       
+          <DummyContent  imgpath="/tabs/AI-support-System.png" />
+        </div>
+      ),
+    },
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-10">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-10">
       <Tabs tabs={tabs} />
     </div>
   );
 }
 
-const DummyContent = () => {
+const DummyContent = ({ imgpath }: { imgpath?: string }) => {
   return (
+    <div className="flex justify-center items-center  w-full h-full ">
+      
     <Image
-      src="/linear.webp"
+      src={imgpath || "/default-image.png"}  // Fallback to a default image if imgpath is undefined
       alt="dummy image"
-      width="1000"
-      height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+      width={900}
+      height={1000} 
+      className=" w-full h-full"
     />
+    </div>
   );
 };

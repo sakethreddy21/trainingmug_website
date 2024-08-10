@@ -1,8 +1,7 @@
 import React from 'react'
-import { Button } from '../ui/moving-border'
+import { Button } from '@/components/ui/moving-border'
 import { ArrowRight } from 'lucide-react'
-import { TabsDemo } from '../tabs/page'
-import { StickyScrollCourses } from '../scrollingcards/page'
+
 
 const SecondScreen = () => {
   return (
@@ -20,9 +19,7 @@ const SecondScreen = () => {
      <iframe className='w-full h-full' src='https://www.youtube.com/embed/5-MLMzbUlPY' title='How to become full stack developer roadmap' allowFullScreen></iframe>
       </Button>
       </div>
-      <div className='w-full h-screen'>
-        <TabsDemo />
-      </div>
+     
     
       
       </div>
