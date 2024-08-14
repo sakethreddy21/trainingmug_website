@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import {Puzzle} from 'lucide-react'
+import {Puzzle, BookCheck, ChevronsLeftRight, MonitorStop} from 'lucide-react'
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
@@ -33,42 +33,44 @@ export function CoursesDetails({ course }: { course: any }) {
           </div>
         </CardItem>
       </div>
-      <div className="w-full flex justify-around items-center">
+      <div className="flex flex-row">
+      <div className="w-full flex flex-col justify-start items-start">
         <CardItem
           translateZ={20}
           as="button"
           onClick={course.onClick}
           className="flex flex-row gap-x-2 px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
-          <Puzzle size={15}/> {course.quizzes} 
+          <Puzzle size={15}/> {course.quizzes} Quizzes
         </CardItem>
         <CardItem
           translateZ={20}
           as="button"
           onClick={course.onClick}
-          className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          className="flex flex-row gap-x-2 justify-start px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
-           →{course.capstone_projects}
+           <MonitorStop size={15}/>{course.capstone_projects} Capstone Projects
         </CardItem>
       </div>
-      <div className="w-full flex justify-around items-center">
+      <div className="w-full flex flex-col justify-start items-start">
         <CardItem
           translateZ={20}
           as="button"
           onClick={course.onClick}
-          className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          className="flex flex-row gap-x-2 px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
-           → {course.excercises}
+           <ChevronsLeftRight size={15}/> {course.excercises} Excercises
         </CardItem>
         <CardItem
           translateZ={20}
           as="button"
           onClick={course.onClick}
-          className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          className="flex flex-row gap-x-2 px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
-           → {course.Chapters}
+         <BookCheck size={15}/>  {course.Chapters} Chapters
         </CardItem>
       </div>
+   </div>
     </div>
   );
 }
