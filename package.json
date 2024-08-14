@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.0",
     "@tabler/icons-react": "^3.11.0",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.22",
     "lucide-react": "^0.424.0",
@@ -19,8 +21,9 @@
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
     "sonner": "^1.5.0",
-    "tailwind-merge": "^2.4.0",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-merge": "^2.5.2",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

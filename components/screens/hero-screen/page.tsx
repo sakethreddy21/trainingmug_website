@@ -2,9 +2,10 @@ import Description from '@/components/description/page'
 import { Navbar } from '@/components/navbar/page'
 import { Testimonials } from '@/components/testimonials/page'
 import { Spotlight } from '@/components/ui/Spotlight'
+import { ArrowRight } from 'lucide-react'
 import React from 'react'
 
-const FirstScreen = () => {
+const HeroScreen = () => {
   return (
     <div className="h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col  justify-center items-center overflow-hidden">
       <Spotlight
@@ -23,11 +24,18 @@ const FirstScreen = () => {
 <div>
   <Description/>
 </div>
-<div className="">
+<div >
   <Testimonials/>
 </div>
+<div className='absolute bottom-5 left-0 flex justify-center items-center w-full '>
+<button className="  flex flex-row justify-between items-center px-4 py-2 rounded-md border border-neutral-300 bg-[#39c3ef] text-black font-medium text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+        Explore Courses
+        <ArrowRight className='ml-2' size={15} />
+      </button>
+</div>
+
     </div>
   )
 }
 
-export default FirstScreen
+export default HeroScreen

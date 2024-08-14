@@ -1,41 +1,12 @@
-"use client";
-
-import Image from "next/image";
-import React from "react";
-import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-
-export function Courses() {
-  const courseData = [
-    {
-      title: "Mastering Java Programming",
-      description: "Master Java Programming from scratch.",
-      imagePath: "/course1.jpg",
-      buttonText: "Learn More",
-      onClick: () => handleCourseClick("AI for Beginners"),
-    },
-    {
-      title: "Programming Fundamentals",
-      description: "Helps you master Programming Fundamentals in Java.",
-      imagePath:"/course2.jpg",
-      buttonText: "Learn More",
-      onClick: () => handleCourseClick("Web Development Bootcamp"),
-    },
-    {
-      title: "Mastering Object Oriented Programming",
-      description: "Mastering Object Oriented Programming in Java.",
-      imagePath: "/course3.jpg",
-      buttonText: "Learn More",
-      onClick: () => handleCourseClick("Data Science Masterclass"),
-    },
-  ];
-
-  function handleCourseClick(courseName: string) {
-    console.log(`You clicked on ${courseName}`);
-    // Add your custom logic here, e.g., navigate to a different page, open a modal, etc.
-  }
-
-  return (
-
+"use client"
+import React from 'react'
+import Image from 'next/image';
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { courseData } from '@/lib/coursedata';
+import { CoursesDetails } from '@/components/course-details/page';
+const CoursesScreen = () => {
+ return (
     <div className="flex flex-col justify-center items-center ">
         <div>
         <button className="bg-slate-800 no-underline group cursor-pointer  shadow-2xl shadow-zinc-900 rounded-full p-px text-[20px] font-semibold leading-6  text-white flex  justify-center items-center">
@@ -90,17 +61,9 @@ export function Courses() {
                 alt={course.title}
               />
             </CardItem>
-            <div className="flex justify-between items-center mt-20">
-              <CardItem
-                translateZ={20}
-                as="button"
-                onClick={course.onClick}
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-              >
-                {course.buttonText} →
-              </CardItem>
-              
-            </div>
+
+<CoursesDetails course={course} />
+       
           </CardBody>
         </CardContainer>
       ))}
@@ -108,3 +71,4 @@ export function Courses() {
     </div>
   );
 }
+export default CoursesScreen

@@ -1,8 +1,8 @@
 
-import SecondScreen from "@/components/screens/second-screen/page";
-import ThirdScreen from "@/components/screens/third-screen/page";
-import FirstScreen from "@/components/screens/first-screen/page";
-import FourthScreen from "@/components/screens/fourth-screen/page";
+import VideoScreen from "@/components/screens/video-screen/page";
+import FeatureScreen from "@/components/screens/feature-screen/page";
+import HeroScreen from "@/components/screens/hero-screen/page";
+import CoursesScreen from "@/components/screens/course-screen/page";
 import FifthScreen from "@/components/screens/fifth-screen/page";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Navbar } from "@/components/navbar/page";
@@ -14,15 +14,15 @@ export default function Home() {
   return (
    <div>
  
-    <FirstScreen/>
+    <HeroScreen/>
 <div >
-<SecondScreen/>
+<VideoScreen/>
 </div>
 <div>
-<ThirdScreen/>
+<FeatureScreen/>
 </div>
 <div className="mt-10">
-<FourthScreen/>
+<CoursesScreen/>
 </div>
 <div >
 <FifthScreen/>
