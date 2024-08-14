@@ -24,7 +24,7 @@ export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-7xl mx-auto z-50 ", className)}
+      className={cn("fixed top-0 inset-x-0 max-w-7xl mx-auto z-50 ", className)}
     >
       <Menu setActive={setActive} >
         <div className="flex justify-between w-full ">
@@ -40,7 +40,7 @@ export function Navbar({ className }: { className?: string }) {
         <div className=" flex flex-row items-center mx-10  gap-x-6"> 
                 
         <MenuItem setActive={setActive} active={active} item="Courses">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="  text-sm grid grid-cols-2 gap-10 px-4">
             <ProductItem
               title="Programming Fundamentals"
               href=""

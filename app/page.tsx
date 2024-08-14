@@ -3,7 +3,7 @@ import VideoScreen from "@/components/screens/video-screen/page";
 import FeatureScreen from "@/components/screens/feature-screen/page";
 import HeroScreen from "@/components/screens/hero-screen/page";
 import CoursesScreen from "@/components/screens/course-screen/page";
-import FifthScreen from "@/components/screens/fifth-screen/page";
+import CertificateScreen from "@/components/screens/certificate-screen/page";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Navbar } from "@/components/navbar/page";
 import Description from "@/components/description/page";
@@ -25,7 +25,7 @@ export default function Home() {
 <CoursesScreen/>
 </div>
 <div >
-<FifthScreen/>
+<CertificateScreen/>
 </div>
 <div>
   <SixthScreen/>

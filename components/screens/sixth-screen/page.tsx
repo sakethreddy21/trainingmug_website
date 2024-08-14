@@ -2,7 +2,7 @@ import React from 'react'
 
 const SixthScreen = () => {
   return (
-    <div>SixthScreen</div>
+    <div className='w-full h-screen'>SixthScreen</div>
   )
 }
 
