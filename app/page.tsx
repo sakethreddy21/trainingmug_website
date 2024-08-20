@@ -4,11 +4,8 @@ import FeatureScreen from "@/components/screens/feature-screen/page";
 import HeroScreen from "@/components/screens/hero-screen/page";
 import CoursesScreen from "@/components/screens/course-screen/page";
 import CertificateScreen from "@/components/screens/certificate-screen/page";
-import { Spotlight } from "@/components/ui/Spotlight";
-import { Navbar } from "@/components/navbar/page";
-import Description from "@/components/description/page";
-import { Testimonials } from "@/components/testimonials/page";
-import SixthScreen from "@/components/screens/sixth-screen/page";
+import QuestionareScreen from "@/components/screens/questionare-screen/page";
+import { InfiniteMovingCardsDemo } from "@/components/icon-slide-bar/page";
 export default function Home() {
   
   return (
@@ -28,7 +25,10 @@ export default function Home() {
 <CertificateScreen/>
 </div>
 <div>
-  <SixthScreen/>
+  <InfiniteMovingCardsDemo/>
+</div>
+<div>
+  <QuestionareScreen/>
 </div>
 
    </div>
