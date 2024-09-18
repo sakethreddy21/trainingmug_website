@@ -97,7 +97,7 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote>
-             saketh
+             {item.name}
             </blockquote>
           </li>
         ))}
