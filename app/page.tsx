@@ -7,6 +7,7 @@ import CertificateScreen from "@/components/screens/certificate-screen/page";
 import QuestionareScreen from "@/components/screens/questionare-screen/page";
 import { IconSlideBar } from "@/components/icon-slide-bar/page";
 import JobReadyCourse from "@/components/screens/job-ready-course/page";
+import Footer from "@/components/screens/footer/page";
 export default function Home() {
   
   return (
@@ -33,6 +34,9 @@ export default function Home() {
 </div>
 <div>
   <QuestionareScreen/>
+</div>
+<div>
+  <Footer/>
 </div>
 
    </div>
