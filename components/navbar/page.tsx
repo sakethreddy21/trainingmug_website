@@ -61,10 +61,22 @@ export function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Webinars">
 
         
-          <div className="flex flex-col space-y-4 text-sm">
+        <div className="  text-sm grid grid-cols-2 gap-10 px-4">
+            <ProductItem
+              title="Programming Fundamentals"
+              href=""
+              src="/course1.jpg"
+              description="Helps you master Programming Fundamentals in Java"
+            />
+            <ProductItem
+              title="Mastering Object Oriented Programming"
+              href=""
+              src="/course2.jpg"
+              description="Mastering Object Oriented Programming in Java"
+            />
+           
             
           </div>
-          
         </MenuItem>
 
         </div>

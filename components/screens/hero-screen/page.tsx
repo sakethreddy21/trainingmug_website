@@ -18,7 +18,7 @@ const HeroScreen = () => {
       <Navbar className=" top-0 bg-none" />
    
       <p className="text-4xl  w-[900px] px-4 text-center sm:text-7xl font-bold  z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
-        Transform your Career with TrainingMug
+        Transform your Career with <span className='text-[#438cff]'>Training<span className='text-[#a7c341]'>Mug</span></span>
       </p>
 
 <div>

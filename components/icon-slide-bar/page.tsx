@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 
-export function InfiniteMovingCardsDemo() {
+export function IconSlideBar() {
   return (
     <div className="h-[20rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden pt-0" >
       <InfiniteMovingCards
@@ -12,6 +12,7 @@ export function InfiniteMovingCardsDemo() {
         items={testimonials}
         direction="right"
         speed="slow"
+        
       />
     </div>
   );

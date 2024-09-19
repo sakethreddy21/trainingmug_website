@@ -12,9 +12,10 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
-    name: string;
-    title: string;
+    quote?: string;
+    name?: string;
+    title?: string;
+    icon?: any; 
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -97,7 +98,7 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote>
-             {item.name}
+             {item.icon? item.icon : item.name}
             </blockquote>
           </li>
         ))}

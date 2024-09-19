@@ -5,7 +5,8 @@ import HeroScreen from "@/components/screens/hero-screen/page";
 import CoursesScreen from "@/components/screens/course-screen/page";
 import CertificateScreen from "@/components/screens/certificate-screen/page";
 import QuestionareScreen from "@/components/screens/questionare-screen/page";
-import { InfiniteMovingCardsDemo } from "@/components/icon-slide-bar/page";
+import { IconSlideBar } from "@/components/icon-slide-bar/page";
+import JobReadyCourse from "@/components/screens/job-ready-course/page";
 export default function Home() {
   
   return (
@@ -14,6 +15,9 @@ export default function Home() {
     <HeroScreen/>
 <div >
 <VideoScreen/>
+</div>
+<div>
+  <JobReadyCourse/>
 </div>
 <div>
 <FeatureScreen/>
@@ -25,7 +29,7 @@ export default function Home() {
 <CertificateScreen/>
 </div>
 <div>
-  <InfiniteMovingCardsDemo/>
+  <IconSlideBar/>
 </div>
 <div>
   <QuestionareScreen/>
