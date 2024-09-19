@@ -20,7 +20,11 @@ const AceternityLogo = () => {
   );
 };
 
-export function Navbar({ className }: { className?: string }) {
+interface NavbarProps {
+  className?: string;
+  scrollToCourses: () => void; // Add prop for the scroll function
+}
+export function Navbar({ className, scrollToCourses }: NavbarProps) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
@@ -38,8 +42,8 @@ export function Navbar({ className }: { className?: string }) {
         </div>
         <div className="flex flex-row items-center gap-x-4 ">
         <div className=" flex flex-row items-center mx-10  gap-x-6"> 
-                
-        <MenuItem setActive={setActive} active={active} item="Courses">
+           <div onClick={scrollToCourses}>   
+        <MenuItem setActive={setActive} active={active} item="Courses" >
           <div className="  text-sm grid grid-cols-2 gap-10 px-4">
             <ProductItem
               title="Programming Fundamentals"
@@ -57,6 +61,7 @@ export function Navbar({ className }: { className?: string }) {
             
           </div>
         </MenuItem>
+        </div>  
       
         <MenuItem setActive={setActive} active={active} item="Webinars">
 

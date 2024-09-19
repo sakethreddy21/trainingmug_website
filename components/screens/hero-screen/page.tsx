@@ -5,7 +5,13 @@ import { Spotlight } from '@/components/ui/Spotlight'
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
 
-const HeroScreen = () => {
+interface HomeScreenProps {
+  scrollToCourses: () => void; // Add prop for the scroll function
+}
+
+
+const HeroScreen = ({  scrollToCourses }: HomeScreenProps) => {
+  
   return (
     <div className="h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col  justify-center items-center overflow-hidden">
       <Spotlight
@@ -15,7 +21,7 @@ const HeroScreen = () => {
        <div className="absolute pointer-events-none inset-0 flex   dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
        
-      <Navbar className=" top-0 bg-none" />
+      <Navbar className=" top-0 bg-none" scrollToCourses={scrollToCourses}/>
    
       <p className="text-4xl  w-[900px] px-4 text-center sm:text-7xl font-bold  z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
         Transform your Career with <span className='text-[#438cff]'>Training<span className='text-[#a7c341]'>Mug</span></span>
