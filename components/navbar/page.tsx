@@ -22,9 +22,11 @@ const AceternityLogo = () => {
 
 interface NavbarProps {
   className?: string;
-  scrollToCourses: () => void; // Add prop for the scroll function
+  scrollToCourses: () => void;
+  scrollToWebinars:()=> void
+   // Add prop for the scroll function
 }
-export function Navbar({ className, scrollToCourses }: NavbarProps) {
+export function Navbar({ className, scrollToCourses, scrollToWebinars }: NavbarProps) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
@@ -62,8 +64,7 @@ export function Navbar({ className, scrollToCourses }: NavbarProps) {
           </div>
         </MenuItem>
         </div>  
-      
-        <MenuItem setActive={setActive} active={active} item="Webinars">
+      <div onClick={scrollToWebinars}> <MenuItem setActive={setActive} active={active} item="Webinars">
 
         
         <div className="  text-sm grid grid-cols-2 gap-10 px-4">
@@ -82,7 +83,8 @@ export function Navbar({ className, scrollToCourses }: NavbarProps) {
            
             
           </div>
-        </MenuItem>
+        </MenuItem></div>
+       
 
         </div>
         <div className="   ">

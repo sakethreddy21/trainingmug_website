@@ -12,18 +12,26 @@ import Footer from "@/components/screens/footer/page";
 import { useRef } from "react";
 export default function Home() {
   const coursesRef = useRef<HTMLDivElement>(null);
+  const webinarRef = useRef<HTMLDivElement>(null)
 
   const scrollToCourses = () => {
     // Scroll to the courses section when called
     if (coursesRef.current) {
       coursesRef.current.scrollIntoView({ behavior: "smooth" });
     }
+
+    
   }
-  
+
+  const scrollToWebinars= () =>{
+  if(webinarRef.current){
+    webinarRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+}  
   return (
    <div>
  
-    <HeroScreen scrollToCourses={scrollToCourses}/>
+    <HeroScreen scrollToCourses={scrollToCourses} scrollToWebinars={scrollToWebinars}/>
 <div >
 <VideoScreen/>
 </div>
@@ -36,7 +44,7 @@ export default function Home() {
 <div className="mt-10 " ref={coursesRef}>
 <CoursesScreen/>
 </div>
-<div className="mt-20 ">
+<div className="mt-20 " ref={webinarRef}>
   <WebinarScreen/>
 </div>
 <div >
