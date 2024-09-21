@@ -87,14 +87,16 @@ export function Navbar({ className, scrollToCourses }: NavbarProps) {
         </div>
         <div className="   ">
 
-      <HoverBorderGradient
-        containerClassName="rounded-full"
-        as="button"
-        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 w-[160px] h-[40px]"
-      >
-        <AceternityLogo />
-        <span>Join Discord</span>
-      </HoverBorderGradient>
+        <HoverBorderGradient
+  containerClassName="rounded-full"
+  as="button"
+  className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 w-[160px] h-[40px]"
+  onClick={() => window.open('https://discord.gg/VZ8CvjPs', '_blank')}
+>
+  <AceternityLogo />
+  <span>Join Discord</span>
+</HoverBorderGradient>
+
     </div>
     <Button
         borderRadius="1.75rem"

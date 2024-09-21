@@ -24,37 +24,19 @@ export function TechStackSlideBar() {
 
 const testimonials = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom...",
-    name: "Devops",
-    title: "A Tale of Two Cities",
+    
     icon: <FaJava size={30} />,
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind...",
-    name: "Cyber Security",
-    title: "Hamlet",
     icon: <SiMongodb size={30} />,
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Cloud",
-    title: "A Dream Within a Dream",
     icon: <Cloud size={30}/>,
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession...",
-    name: "Web Development",
-    title: "Pride and Prejudice",
     icon: <SiMongodb size={30} />,
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little...",
-    name: "App Development",
-    title: "Moby-Dick",
     icon: <Smartphone />,
   },
 ];
